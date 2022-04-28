@@ -14,7 +14,15 @@ function App() {
 
   return (
     <div className="App">
-      <InputForm handleChanges={handleChanges} text={text} />
+      <h1>{text}</h1>
+      <label>Enter Text:
+        <input 
+          type="text"
+          name="text"
+          value={text}
+          onChange={handleChanges}
+        />
+      </label>
     </div>
   );
 }
